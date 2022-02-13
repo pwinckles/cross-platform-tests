@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  linux:
+    name: linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run script
+        run: ./scripts/checksum-test-linux.sh
+  mac:
+    name: mac
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run script
+        run: ./scripts/checksum-test-mac.sh
