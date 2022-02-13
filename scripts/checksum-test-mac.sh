@@ -4,6 +4,8 @@ test_dir=checksum-test
 f1=`echo -e "new\nline"`
 f2='back\slash'
 
+echo --help
+
 echo "'$f1'"
 echo "'$f2'"
 
