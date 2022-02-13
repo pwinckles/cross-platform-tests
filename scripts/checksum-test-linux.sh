@@ -4,9 +4,6 @@ test_dir=checksum-test
 f1=`echo "new\nline"`
 f2='back\slash'
 
-echo "'$f1'"
-echo "'$f2'"
-
 mkdir "$test_dir"
 cd "$test_dir"
 
